@@ -1,75 +1,109 @@
-# React + TypeScript + Vite
+# 🍰 Doce Encanto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site de confeitaria moderno e responsivo, desenvolvido com React para praticar componentização, estado e boas práticas de front-end.
 
-Currently, two official plugins are available:
+> 🚧 **Projeto em andamento.** Novas seções e funcionalidades estão sendo adicionadas aos poucos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<!-- Adicione aqui um print ou GIF da home -->
+<!-- ![Preview do projeto](./docs/preview.png) -->
 
-## React Compiler
+🔗 **Demo:** _em breve_
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 💡 Sobre o projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+O Doce Encanto é uma landing page de uma confeitaria fictícia, com visual elegante e aconchegante e foco em uma navegação simples e limpa. O layout foi desenhado no Figma e depois implementado em React.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+O objetivo é praticar:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Criação de componentes reutilizáveis
+- Props, listas e renderização condicional
+- Gerenciamento de estado com hooks
+- Layout responsivo (desktop e mobile)
+- Fidelidade ao design do Figma
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
 
+## ✅ Status
+
+**Já feito**
+- [x] Design no Figma
+- [x] Estrutura inicial do projeto
+- [ ] Header e navegação
+- [ ] Hero
+- [ ] Categorias
+- [ ] Mais vendidos (cards de produto)
+
+**Próximos passos**
+- [ ] Seção Sobre
+- [ ] Depoimentos
+- [ ] Newsletter e Footer
+- [ ] Responsividade completa
+- [ ] Carrinho funcional (adicionar, remover e total)
+- [ ] Filtro de produtos por categoria
+- [ ] Deploy
+
+> Atualize os checkboxes conforme for avançando.
+
+---
+
+## 🛠️ Tecnologias
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- HTML5 e CSS3
+- JavaScript (ES6+)
+- Figma (design)
+
+---
+
+## 🚀 Como rodar o projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/isabellyfranklin/NOME-DO-REPOSITORIO.git
+
+# Entre na pasta
+cd NOME-DO-REPOSITORIO
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Depois, acesse `http://localhost:5173` no navegador.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📁 Estrutura de pastas
 
 ```
+src/
+├── components/   # Header, Hero, CategoryCard, ProductCard, Testimonial, Footer
+├── assets/       # imagens e ícones
+├── styles/       # estilos globais
+├── App.jsx
+└── main.jsx
+```
+
+> A estrutura pode mudar durante o desenvolvimento.
+
+---
+
+## 🎨 Design
+
+O layout foi criado no Figma, com paleta em tons de creme, marrom chocolate e rosa suave, e tipografia serifada nos títulos.
+
+🔗 [Ver design no Figma](#) _(adicione o link aqui)_
+
+---
+
+## 👩‍💻 Autora
+
+**Isabelly Franklin Silva**
+
+- GitHub: [@isabellyfranklin](https://github.com/isabellyfranklin)
+- E-mail: isafranklin883@gmail.com
