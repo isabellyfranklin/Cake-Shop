@@ -16,7 +16,7 @@ export function Hero() {
 
         <div className={style.actions}>
             <button 
-            style={{backgroundColor: "#5A3A2E", border: 'none', padding: '10px'}}
+            style={{backgroundColor: "#5A3A2E", border: 'none', padding: '10px', color:'#FFFCF9'}}
             className={style.buttons}
             >
             Ver tudo

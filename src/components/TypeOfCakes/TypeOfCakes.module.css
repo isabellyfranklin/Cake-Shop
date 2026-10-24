@@ -1,0 +1,42 @@
+:root {
+  /* Colors */
+  --main-color: #FFFCF9;
+
+  /* Text */
+  --font-title: "Playfair Display", serif;
+  --font-text: "Inter", sans-serif;
+  --text-dark-brown: #5A3A2E;
+  --text-light-brown: #856B60;
+}
+
+.typeOfCakes{
+    padding-inline: 4rem;
+}
+
+.contentTypeOfCakes{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.topTitle{
+    color: var(--text-light-brown);
+    font-family: var(--font-text);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.mainTitle{
+    color: var(--text-dark-brown);
+    font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.cards{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+}
