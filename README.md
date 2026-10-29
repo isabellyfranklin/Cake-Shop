@@ -1,6 +1,6 @@
 # 🍰 Doce Encanto
 
-Site de confeitaria moderno e responsivo, desenvolvido com React para praticar componentização, estado e boas práticas de front-end.
+Site de confeitaria moderno e responsivo, desenvolvido com **React** e **TypeScript** para praticar componentização, props, `children` e layout responsivo com CSS Modules.
 
 > 🚧 **Projeto em andamento.** Novas seções e funcionalidades estão sendo adicionadas aos poucos.
 
@@ -13,15 +13,16 @@ Site de confeitaria moderno e responsivo, desenvolvido com React para praticar c
 
 ## 💡 Sobre o projeto
 
-O Doce Encanto é uma landing page de uma confeitaria fictícia, com visual elegante e aconchegante e foco em uma navegação simples e limpa. O layout foi desenhado no Figma e depois implementado em React.
+O Doce Encanto é uma landing page de uma confeitaria fictícia, com visual elegante e aconchegante e foco em uma navegação simples e limpa. O layout foi desenhado no Figma e depois implementado em React, mantendo a fidelidade ao design.
 
 O objetivo é praticar:
 
-- Criação de componentes reutilizáveis
-- Props, listas e renderização condicional
-- Gerenciamento de estado com hooks
-- Layout responsivo (desktop e mobile)
-- Fidelidade ao design do Figma
+- Criação de componentes reutilizáveis (props e `children`)
+- Tipagem de props com TypeScript
+- Renderização de listas com `map`
+- Estilização com CSS Modules
+- Layout responsivo (desktop, tablet e mobile) com Flexbox e Grid
+- HTML semântico e acessibilidade básica
 
 ---
 
@@ -30,16 +31,20 @@ O objetivo é praticar:
 **Já feito**
 - [x] Design no Figma
 - [x] Estrutura inicial do projeto
-- [ ] Header e navegação
-- [ ] Hero
-- [ ] Categorias
-- [ ] Mais vendidos (cards de produto)
+- [x] Header e navegação
+- [x] Hero
+- [x] Categorias ("Qual é o seu momento?")
+- [x] Componentes de card (categoria e produto)
+
+**Em andamento**
+- [ ] Mais vendidos ("Amor à primeira fatia")
+- [ ] Seção Sobre
 
 **Próximos passos**
-- [ ] Seção Sobre
 - [ ] Depoimentos
 - [ ] Newsletter e Footer
-- [ ] Responsividade completa
+- [ ] Responsividade revisada em todas as seções
+- [ ] Menu mobile (hambúrguer) com `useState`
 - [ ] Carrinho funcional (adicionar, remover e total)
 - [ ] Filtro de produtos por categoria
 - [ ] Deploy
@@ -51,9 +56,9 @@ O objetivo é praticar:
 ## 🛠️ Tecnologias
 
 - [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/)
-- HTML5 e CSS3
-- JavaScript (ES6+)
+- CSS Modules
 - Figma (design)
 
 ---
@@ -62,10 +67,10 @@ O objetivo é praticar:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/isabellyfranklin/NOME-DO-REPOSITORIO.git
+git clone https://github.com/isabellyfranklin/loja-de-bolo.git
 
 # Entre na pasta
-cd NOME-DO-REPOSITORIO
+cd loja-de-bolo
 
 # Instale as dependências
 npm install
@@ -82,11 +87,12 @@ Depois, acesse `http://localhost:5173` no navegador.
 
 ```
 src/
-├── components/   # Header, Hero, CategoryCard, ProductCard, Testimonial, Footer
-├── assets/       # imagens e ícones
-├── styles/       # estilos globais
-├── App.jsx
-└── main.jsx
+├── assets/        # imagens e ícones
+├── components/    # seções da página (Nav, Hero, TypeOfCakes...)
+├── interface/     # componentes reutilizáveis (Section, TypeCake, ProductCard...)
+├── App.tsx
+├── index.css      # estilos globais e variáveis de cor e fonte
+└── main.tsx
 ```
 
 > A estrutura pode mudar durante o desenvolvimento.
@@ -95,15 +101,8 @@ src/
 
 ## 🎨 Design
 
-O layout foi criado no Figma, com paleta em tons de creme, marrom chocolate e rosa suave, e tipografia serifada nos títulos.
+O layout foi criado no Figma, com paleta em tons de creme, marrom chocolate e rosa suave, e tipografia serifada (Playfair Display) nos títulos e sans-serif (Inter) nos textos.
 
 🔗 [Ver design no Figma](#) _(adicione o link aqui)_
 
 ---
-
-## 👩‍💻 Autora
-
-**Isabelly Franklin Silva**
-
-- GitHub: [@isabellyfranklin](https://github.com/isabellyfranklin)
-- E-mail: isafranklin883@gmail.com
