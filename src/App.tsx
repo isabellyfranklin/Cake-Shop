@@ -4,6 +4,7 @@ import { Hero } from './components/Hero/Hero'
 // import TypeOfCakes from './components/TypeOfCakes/TypeOfCakes'
 import Cakes from './components/Cakes/Cakes'
 import About from './components/About/About'
+import Testimonials from './components/Testimonials/Testimonials'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       {/* <TypeOfCakes></TypeOfCakes>      */}
       <Cakes/>
       <About/>
+      <Testimonials/>
    
     </>
   )

@@ -50,6 +50,7 @@
   width: 100px;
   height: 42px;
   font-size: 11px;
+  font-family: var(--font-text);
   color: var(--text-dark-brown);
   background-color: var(--main-color);
   padding: 2px;
