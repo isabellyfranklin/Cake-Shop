@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --main-color: #fffcf9;
+
+  /* Text */
+  --font-title: "Playfair Display", serif;
+  --font-text: "Inter", sans-serif;
+  --text-dark-brown: #5a3a2e;
+  --text-light-brown: #856b60;
+}
+
+.card {
+  width: min(300px, 100%);
+  height: auto;
+  border-radius: 15px;
+  margin: 10px;
+  background-color: rgb(254, 254, 254);
+  box-shadow: 5px 9px 50px -3px rgba(0, 0, 0, 0.42);
+  text-align: left;
+  overflow: hidden;
+}
+
+.fig {
+  width: 100%;
+  height: 270px;
+  background-color: var(--text-dark-brown);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.titles {
+  width: 100%;
+  padding: 13px;
+  padding-inline: 1rem;
+  text-align: left;
+}
+
+.nameCake {
+  font-family: var(--font-title);
+  font-size: 22px;
+  font-weight: 400;
+  padding-bottom: 7px;
+  color: var(--text-dark-brown);
+}
+
+.CakeIngredients {
+  font-family: var(--font-text);
+  font-size: 10px;
+  color: var(--text-dark-brown);
+}
+
+.price {
+  font-family: var(--font-text);
+  font-size: 18px;
+  color: var(--text-dark-brown);
+  font-weight: bolder;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+  padding-inline: 7px;
+}
+.addButton {
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  font-weight: 500;
+  color: var(--main-color);
+  background-color: var(--text-dark-brown);
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: var(--main-color);
+  border: solid 1px var(--text-dark-brown);
+  color: var(--text-dark-brown);
+}

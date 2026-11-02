@@ -1,0 +1,111 @@
+:root {
+  /* Colors */
+  --main-color: #fffcf9;
+
+  /* Text */
+  --font-title: "Playfair Display", serif;
+  --font-text: "Inter", sans-serif;
+  --text-dark-brown: #5a3a2e;
+  --text-light-brown: #856b60;
+}
+
+.about {
+  width: 100%;
+  background-color: var(--main-color);
+  padding-inline: 4rem;
+  padding-block: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4.5rem;
+}
+
+.media {
+  width: 800px;
+  height: 500px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  background: url(../../assets/cakes/BakerDecoratingCake.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+}
+
+.title {
+  width: 450px;
+}
+
+.description {
+  color: var(--text-light-brown);
+  font-family: var(--font-text);
+  font-size: 15px;
+  line-height: 2;
+}
+
+.button {
+  width: 100px;
+  height: 42px;
+  font-size: 11px;
+  color: var(--text-dark-brown);
+  background-color: var(--main-color);
+  padding: 2px;
+  border-radius: 15px;
+  border: none;
+  font-weight: 500;
+  border: solid 1px var(--text-dark-brown);
+  cursor: pointer;
+  margin-block: 7px;
+  transition:
+    background-color 250ms ease,
+    color 250ms ease,
+    transform 250ms ease,
+    box-shadow 250ms ease;
+}
+
+.button:hover {
+  background-color: var(--text-dark-brown);
+  color: var(--main-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px -4px rgba(90, 58, 46, 0.45);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--text-dark-brown);
+  outline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+  .about {
+    gap: 0rem;
+  }
+
+  .media {
+    min-width: 50px;
+    min-height: 70px;
+  }
+
+  .image {
+    background: url(../../assets/cakes/BakerDecoratingCake-two.svg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .button{
+    min-width: 70px;
+    font-size: 10px;
+  }
+}

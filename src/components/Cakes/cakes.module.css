@@ -1,0 +1,21 @@
+.cakes{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    background-color: #f8e7e2a4;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (max-width: 700px) {
+    .cakes {
+        padding-inline: 1rem;
+    }
+}

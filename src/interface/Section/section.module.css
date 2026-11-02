@@ -1,0 +1,55 @@
+:root {
+  /* Colors */
+  --main-color: #FFFCF9;
+
+  /* Text */
+  --font-title: "Playfair Display", serif;
+  --font-text: "Inter", sans-serif;
+  --text-dark-brown: #5A3A2E;
+  --text-light-brown: #856B60;
+}
+
+.content {
+    width: 100%;
+    text-align: left;
+    margin: 3rem 0px 1rem 0px;
+}
+
+.topTitle {
+    color: var(--text-light-brown);
+    font-family: var(--font-text);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.mainTitle {
+    color: var(--text-dark-brown);
+    font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.description {
+  color: var(--text-light-brown);
+  font-family: var(--font-text);
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 1.2rem;
+}
+
+@media (max-width: 700px) {
+  
+  .topTitle{
+    font-size: 10px;
+  }
+
+  .mainTitle{
+    font-size: 1.5rem;
+  }
+
+  .description{
+    font-size: 13px;
+  }
+}

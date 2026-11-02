@@ -1,5 +1,5 @@
 import style from "./Hero.module.css";
-import cakeImagem from '../../assets/cake-img.png'
+import cakeImagem from '../../assets/cakes/cake-img.png'
 
 export function Hero() {
   return (

@@ -1,6 +1,6 @@
 import style from "./Nav.module.css";
-import logo from '../../assets/cake-icon.svg'
-import cartShopping from '../../assets/cart-shopping-icon.svg'
+import logo from '../../assets/icons/cake-icon.svg'
+import cartShopping from '../../assets/icons/cart-shopping-icon.svg'
 
 export function Nav() {
   return (

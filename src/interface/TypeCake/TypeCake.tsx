@@ -1,4 +1,4 @@
-import arrowIcon from "../../assets/arrow-icon.svg";
+import arrowIcon from "../../assets/icons/arrow-icon.svg"
 import style from "./TypeCake.module.css";
 
 interface Props {
