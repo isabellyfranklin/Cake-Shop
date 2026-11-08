@@ -1,25 +1,6 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  /* Colors */
-  --main-color: #fffcf9;
-
-  /* Text */
-  --font-title: "Playfair Display", serif;
-  --font-text: "Inter", sans-serif;
-  --text-dark-brown: #5a3a2e;
-  --text-light-brown: #856b60;
-}
-
 .card {
-  width: 300px;
-  height: auto;
+  width: 100%;
   border-radius: 15px;
-  margin: 10px;
   background-color: rgb(254, 254, 254);
   box-shadow: 5px 9px 50px -3px rgba(0, 0, 0, 0.42);
   overflow: hidden;
@@ -38,18 +19,12 @@
   object-fit: cover;
 }
 
-.image {
-  width: 100%;
-  object-fit: cover;
-}
-
 .titles {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 1rem;
-  margin-top: 1rem;
-  padding: 10px;
+  gap: 0.5rem;
+  padding: 1rem;
 }
 
 .nameCake {
@@ -61,14 +36,24 @@
 
 .icon {
   font-weight: bolder;
+  flex-shrink: 0;
 }
+
 .arrowIcon {
   width: 15px;
   height: 15px;
 }
 
 @media (max-width: 700px) {
-    .card{
-        background-color: red;
-    }
+  .fig {
+    height: 140px;
+  }
+
+  .titles {
+    padding: 0.75rem;
+  }
+
+  .nameCake {
+    font-size: 0.875rem;
+  }
 }

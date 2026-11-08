@@ -1,5 +1,5 @@
 import arrowIcon from "../../assets/icons/arrow-icon.svg"
-import style from "./TypeCake.module.css";
+import styles from "./typeCake.module.css";
 
 interface Props {
   imagem?: string;
@@ -9,17 +9,17 @@ interface Props {
 
 export default function TypeCake({ imagem, cakeType, nameImagem }: Props) {
   return (
-      <div className={style.card}>
+      <div className={styles.card}>
 
-        <figure className={style.fig}>
-          <img className={style.image} src={imagem} alt={nameImagem} />
+        <figure className={styles.fig}>
+          <img className={styles.image} src={imagem} alt={nameImagem} />
         </figure>
 
-        <div className={style.titles}>
-          <h2 className={style.nameCake}>{cakeType}</h2>
+        <div className={styles.titles}>
+          <h3 className={styles.nameCake}>{cakeType}</h3>
 
-          <span className={style.icon} aria-hidden="true">
-            <img className={style.arrowIcon} src={arrowIcon} />
+          <span className={styles.icon} aria-hidden="true">
+            <img className={styles.arrowIcon} src={arrowIcon} alt="" />
           </span>
         </div>
 

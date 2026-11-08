@@ -1,4 +1,4 @@
-import style from "./ProductCard.module.css";
+import styles from "./productCard.module.css";
 
 interface Props {
   imagem: string;
@@ -16,20 +16,20 @@ export default function ProductCard({
   price,
 }: Props) {
   return (
-    <div className={style.card}>
-      <figure className={style.fig}>
-        <img className={style.image} src={imagem} alt={nameImagem} />
+    <div className={styles.card}>
+      <figure className={styles.fig}>
+        <img className={styles.image} src={imagem} alt={nameImagem} />
       </figure>
 
-      <div className={style.titles}>
-        <h2 className={style.nameCake}>{cakeType}</h2>
-        <p className={style.CakeIngredients}>{CakeIngredients}</p>
+      <div className={styles.titles}>
+        <h3 className={styles.nameCake}>{cakeType}</h3>
+        <p className={styles.CakeIngredients}>{CakeIngredients}</p>
 
-        <div className={style.cardFooter}>
-          <p className={style.price}>
+        <div className={styles.cardFooter}>
+          <p className={styles.price}>
             R$ {price}
           </p>
-          <button type="button" className={style.addButton}>
+          <button type="button" className={styles.addButton}>
             Adicionar
           </button>
         </div>

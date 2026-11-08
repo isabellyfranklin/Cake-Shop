@@ -1,14 +1,3 @@
-:root {
-  /* Colors */
-  --main-color: #FFFCF9;
-
-  /* Text */
-  --font-title: "Playfair Display", serif;
-  --font-text: "Inter", sans-serif;
-  --text-dark-brown: #5A3A2E;
-  --text-light-brown: #856B60;
-}
-
 .content {
     width: 100%;
     text-align: left;

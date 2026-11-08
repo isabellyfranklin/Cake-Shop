@@ -1,24 +1,24 @@
 import Section from "../../interface/Section/Section";
-import style from "./about.module.css"
+import styles from "./about.module.css"
 
 export default function About() {
   return (
-    <section className={style.about}>
+    <section id="sobre" className={styles.about}>
       
-      <div className={style.media}>
-        <div className={style.image}>
+      <div className={styles.media}>
+        <div className={styles.image}>
             {/* imagem fica aqui */}
         </div>
       </div>
 
-       <div className={style.title}>
+       <div className={styles.title}>
            <Section
             topTitle="A DOÇURA MORA NOS DETALHES"
             mainTitle="Feito com afeto."
             secondTitle="Do começo ao fim."
             />
-            <p className={style.description}>Na Doce Encanto, cada receita tem um pouco da nossa história. Escolhemos bons ingredientes e cuidamos de cada detalhe para transformar suas celebrações em lembranças deliciosas.</p>
-            <button className={style.button}>
+            <p className={styles.description}>Na Doce Encanto, cada receita tem um pouco da nossa história. Escolhemos bons ingredientes e cuidamos de cada detalhe para transformar suas celebrações em lembranças deliciosas.</p>
+            <button className={styles.button}>
                 Nossa história
             </button>
        </div>

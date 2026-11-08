@@ -1,14 +1,3 @@
-:root {
-  /* Colors */
-  --main-color: #FFFCF9;
-
-  /* Text */
-  --font-title: "Playfair Display", serif;
-  --font-text: "Inter", sans-serif;
-  --text-dark-brown: #5A3A2E;
-  --text-light-brown: #856B60;
-}
-
 .hero {
   background-color: var(--main-color);
   padding: 2rem 4rem;
@@ -42,7 +31,7 @@
   content: "";
   width: 1.5rem;
   height: 1px;
-  background-color:  #5A3A2E;
+  background-color:  var(--text-dark-brown);
 }
 
 .mainTitle {
@@ -75,6 +64,29 @@
   font-family: var(--font-text);
   font-size: 0.875rem;
   cursor: pointer;
+  transition: background-color 250ms ease, color 250ms ease;
+}
+
+.primary {
+  border: 1px solid var(--text-dark-brown);
+  background-color: var(--text-dark-brown);
+  color: var(--main-color);
+}
+
+.primary:hover {
+  background-color: var(--main-color);
+  color: var(--text-dark-brown);
+}
+
+.secondary {
+  border: 1px solid var(--text-dark-brown);
+  background-color: white;
+  color: var(--text-dark-brown);
+}
+
+.secondary:hover {
+  background-color: var(--text-dark-brown);
+  color: var(--main-color);
 }
 
 .media {

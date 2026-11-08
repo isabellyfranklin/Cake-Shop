@@ -1,5 +1,5 @@
 import TypeCake from "../../interface/TypeCake/TypeCake";
-import style from "./TypeOfCakes.module.css";
+import styles from "./typeOfCakes.module.css";
 
 import birthdayCake from "../../assets/cakes/image-birthday-cake.svg";
 import cupCake from "../../assets/cakes/image-cupCake.svg";
@@ -35,12 +35,12 @@ const categorias = [
 
 export default function TypeOfCakes() {
   return (
-    <section className={style.typeOfCakes}>
+    <section className={styles.typeOfCakes}>
       <Section
         topTitle="PARA CADA CELEBRAÇÃO"
         mainTitle="Qual é o seu momento?"
       >
-        <div className={style.cards}>
+        <div className={styles.cards}>
           {categorias.map((item) => (
             <TypeCake
               key={item.type}

@@ -1,0 +1,133 @@
+.content {
+  background-color: var(--cream);
+}
+
+.container {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding: 4rem 4rem 2rem;
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  padding-bottom: 3rem;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-right: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoIcon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoName {
+  color: var(--text-dark-brown);
+  font-family: var(--font-title);
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.logoTagline {
+  color: var(--text-dark-brown);
+  font-family: var(--font-text);
+  font-size: 0.5625rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.slogan {
+  color: var(--text-light-brown);
+  font-family: var(--font-text);
+  font-size: 0.8125rem;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.groupTitle {
+  color: var(--text-dark-brown);
+  font-family: var(--font-text);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-light-brown);
+  font-family: var(--font-text);
+  font-size: 0.8125rem;
+  transition: color 200ms ease;
+}
+
+.link:hover {
+  color: var(--text-dark-brown);
+}
+
+.socialIcon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--pink-border);
+  color: var(--text-light-brown);
+  font-family: var(--font-text);
+  font-size: 0.625rem;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 3rem 1.5rem 1.5rem;
+  }
+
+  .top {
+    flex-wrap: wrap;
+    gap: 2rem 3rem;
+  }
+
+  .brand {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

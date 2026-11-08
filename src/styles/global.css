@@ -1,18 +1,16 @@
-:root {
-  /* Colors */
-  --main-color: #FFFCF9;
-  --text-dark-brown: #5A3A2E;
-  --text-light-brown: #856B60;
-
-  /* Fonts */
-  --font-title: "Playfair Display", serif;
-  --font-text: "Inter", sans-serif;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button,
+input {
+  font: inherit;
 }
 
 body {

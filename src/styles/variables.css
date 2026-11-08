@@ -1,0 +1,13 @@
+:root {
+  /* Colors */
+  --main-color: #fffcf9;
+  --cream: #fbf6f0;
+  --pink-bg: #f8e7e2;
+  --pink-border: #e8d9cf;
+
+  /* Text */
+  --font-title: "Playfair Display", serif;
+  --font-text: "Inter", sans-serif;
+  --text-dark-brown: #5a3a2e;
+  --text-light-brown: #856b60;
+}

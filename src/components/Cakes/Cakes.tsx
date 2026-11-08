@@ -1,6 +1,6 @@
 import ProductCard from "../../interface/ProductCard/ProductCard";
 import Section from "../../interface/Section/Section";
-import style from "./cakes.module.css";
+import styles from "./cakes.module.css";
 
 import cakeStrawberry from '../../assets/CakeFlavors/Strawberrycake.svg'
 import cakeChocolate from '../../assets/CakeFlavors/ChocolateCake.svg'
@@ -36,12 +36,12 @@ export default function Cakes() {
   ];
 
   return (
-    <section className={style.cakes}>
+    <section id="bolos" className={styles.cakes}>
       <Section
         topTitle="OS QUERIDINHOS DA CASA"
         mainTitle="Amor à primeira fatia"
         description="Nossos mais vendidos, feitos para encantar.">
-        <div className={style.cards}>
+        <div className={styles.cards}>
           {listCakes.map((item) => (
             <ProductCard
               key={item.name}

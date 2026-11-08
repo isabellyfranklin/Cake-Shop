@@ -1,43 +1,38 @@
-import style from "./Hero.module.css";
+import styles from "./hero.module.css";
 import cakeImagem from '../../assets/cakes/cake-img.png'
 
 export function Hero() {
   return (
-    <section className={style.hero}>
-      <div className={style.contentHero}>
+    <section id="inicio" className={styles.hero}>
+      <div className={styles.contentHero}>
 
-        <p className={style.topTitle}>Feito à mão, com amor</p>
+        <p className={styles.topTitle}>Feito à mão, com amor</p>
 
-        <h1 className={style.mainTitle}>Momento mais doce começam <br />aqui</h1>
+        <h1 className={styles.mainTitle}>Momentos mais doces começam <br />aqui</h1>
 
-        <p className={style.bottomTitle}>
+        <p className={styles.bottomTitle}>
           Bolos artesanais para celebrar a vida.
         </p>
 
-        <div className={style.actions}>
-            <button 
-            style={{backgroundColor: "#5A3A2E", border: 'none', padding: '10px', color:'#FFFCF9'}}
-            className={style.buttons}
-            >
-            Ver tudo
+        <div className={styles.actions}>
+            <button type="button" className={`${styles.buttons} ${styles.primary}`}>
+              Ver tudo
             </button>
-            <button className={style.buttons}
-            style={{ border: 'solid 1px #5A3A2E ', padding: '10px',backgroundColor: 'white', color: '#5A3A2E' }}
-            >
-            Encomenda personalizada
+            <button type="button" className={`${styles.buttons} ${styles.secondary}`}>
+              Encomenda personalizada
             </button>
         </div>
       </div>
 
-      <figure className={style.media}>
+      <figure className={styles.media}>
 
         <img
           src={cakeImagem}
           alt="Bolo confeitado com morangos frescos sobre um suporte de cerâmica"
-          className={style.image}
+          className={styles.image}
         />
 
-        <figcaption className={style.caption}>
+        <figcaption className={styles.caption}>
           Um carinho em cada fatia.
         </figcaption>
         

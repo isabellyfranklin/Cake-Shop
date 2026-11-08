@@ -1,8 +1,8 @@
 import type { ReactNode } from "react";
-import style from "./section.module.css";
+import styles from "./section.module.css";
 
 interface Props {
-  topTitle: string;
+  topTitle?: string;
   mainTitle: string;
   secondTitle?: string;
   description?: string;
@@ -17,11 +17,18 @@ export default function Section({
   children,
 }: Props) {
   return (
-      <div className={style.content}>
-        <p className={style.topTitle}>{topTitle}</p>
-        <h2 className={style.mainTitle}>{mainTitle}</h2>
-        <h2 className={style.mainTitle}>{secondTitle}</h2>
-        <p className={style.description}>{description}</p>
+      <div className={styles.content}>
+        {topTitle && <p className={styles.topTitle}>{topTitle}</p>}
+        <h2 className={styles.mainTitle}>
+          {mainTitle}
+          {secondTitle && (
+            <>
+              <br />
+              {secondTitle}
+            </>
+          )}
+        </h2>
+        {description && <p className={styles.description}>{description}</p>}
         {children}
       </div>
   );

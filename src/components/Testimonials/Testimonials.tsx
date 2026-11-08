@@ -1,4 +1,4 @@
-import style from './testimonials.module.css'
+import styles from './testimonials.module.css'
 import TestimonialCard from "../../interface/TestimonialCard/TestimonialCard";
 import Section from "../../interface/Section/Section";
 
@@ -32,11 +32,11 @@ export default function Testimonials(){
     ]
 
     return(
-        <section className={style.Testimonials}>
+        <section className={styles.Testimonials}>
             <Section
             topTitle="CARINHO QUE VOLTA" 
             mainTitle="Quem prova, se encanta"/>
-            <div className={style.cards}>    
+            <div className={styles.cards}>    
                 {feedBacks.map( (item) => (
                 <TestimonialCard
                 key={item.name}
