@@ -1,11 +1,15 @@
 .mainHeader{
+    background-color: var(--main-color);
+    padding-inline: 2rem;
+}
+
+.content{
     width: 100%;
+    max-width: 1440px;
     height: 47px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-inline: 2rem;
-    background-color: var(--main-color);
+    justify-content: space-between; 
     position: relative;
 }
 
