@@ -4,7 +4,7 @@ import styles from "./newsLetter.module.css";
 export default function NewsLetter() {
   return (
     <section className={styles.newsLetter}>
-      <div className={styles.content}>
+      <div className={`container ${styles.content}`}>
           <Section
             mainTitle="Uma dose de doçura no seu e-mail"
             description="Receba novidades e delícias em primeira mão."

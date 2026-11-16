@@ -37,6 +37,7 @@ export default function Cakes() {
 
   return (
     <section id="bolos" className={styles.cakes}>
+      <div className="container">
       <Section
         topTitle="OS QUERIDINHOS DA CASA"
         mainTitle="Amor à primeira fatia"
@@ -54,6 +55,7 @@ export default function Cakes() {
           ))}
         </div>
       </Section>
+      </div>
     </section>
   );
 }

@@ -36,6 +36,7 @@ const categorias = [
 export default function TypeOfCakes() {
   return (
     <section className={styles.typeOfCakes}>
+      <div className="container">
       <Section
         topTitle="PARA CADA CELEBRAÇÃO"
         mainTitle="Qual é o seu momento?"
@@ -51,6 +52,7 @@ export default function TypeOfCakes() {
           ))}
         </div>
       </Section>
+      </div>
     </section>
   );
 }

@@ -33,6 +33,7 @@ export default function Testimonials(){
 
     return(
         <section className={styles.Testimonials}>
+            <div className="container">
             <Section
             topTitle="CARINHO QUE VOLTA" 
             mainTitle="Quem prova, se encanta"/>
@@ -47,6 +48,7 @@ export default function Testimonials(){
                 />
                 ))}
     
+            </div>
             </div>
         </section>
     )

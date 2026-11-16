@@ -1,6 +1,9 @@
 .hero {
   background-color: var(--main-color);
-  padding: 2rem 4rem;
+  padding-block: 2rem;
+}
+
+.inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,9 +121,8 @@
 }
 
 @media (max-width: 700px) {
-  .hero {
+  .inner {
     flex-direction: column;
-    padding: 2rem 1rem;
     gap: 2rem;
   }
 

@@ -3,9 +3,7 @@
 }
 
 .container {
-  max-width: 1400px;
-  margin-inline: auto;
-  padding: 4rem 4rem 2rem;
+  padding-block: 4rem 2rem;
 }
 
 .top {
@@ -111,7 +109,7 @@
 
 @media (max-width: 900px) {
   .container {
-    padding: 3rem 1.5rem 1.5rem;
+    padding-block: 3rem 1.5rem;
   }
 
   .top {

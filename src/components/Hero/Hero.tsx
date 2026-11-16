@@ -4,6 +4,7 @@ import cakeImagem from '../../assets/cakes/cake-img.png'
 export function Hero() {
   return (
     <section id="inicio" className={styles.hero}>
+      <div className={`container ${styles.inner}`}>
       <div className={styles.contentHero}>
 
         <p className={styles.topTitle}>Feito à mão, com amor</p>
@@ -38,6 +39,7 @@ export function Hero() {
         
 
       </figure>
+      </div>
     </section>
   );
 }

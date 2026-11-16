@@ -5,9 +5,9 @@
     justify-content: center;
     width: min(400px, 100%);
     min-height: 220px;
-    background-color: white;
-    box-shadow: 6px 6px 18px -5px #000000;
-    border-radius: 15px;
+    background-color: var(--main-color);
+    box-shadow: var(--shadow-card);
+    border-radius: var(--radius-card);
 }
 
 .media{

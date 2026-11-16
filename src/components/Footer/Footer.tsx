@@ -18,7 +18,7 @@ const acompanhe = [
 export default function Footer() {
   return (
     <footer id="contato" className={styles.content}>
-      <div className={styles.container}>
+      <div className={`container ${styles.container}`}>
           <div className={styles.top}>
             <div className={styles.brand}>
               <a href="#inicio" className={styles.logo}>

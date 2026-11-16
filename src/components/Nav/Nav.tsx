@@ -26,7 +26,7 @@ export function Nav() {
 
   return (
       <header className={styles.mainHeader}>
-<div className={styles.content}>
+<div className={`container ${styles.content}`}>
   
           <div className={styles.logo}>
             <img className={styles.imgLogo} src={logo} alt="Logo do site" />

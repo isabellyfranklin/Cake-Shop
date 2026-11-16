@@ -1,8 +1,8 @@
 .card {
   width: min(300px, 100%);
-  border-radius: 15px;
-  background-color: rgb(254, 254, 254);
-  box-shadow: 5px 9px 50px -3px rgba(0, 0, 0, 0.42);
+  border-radius: var(--radius-card);
+  background-color: var(--main-color);
+  box-shadow: var(--shadow-card);
   text-align: left;
   overflow: hidden;
 }

@@ -1,11 +1,8 @@
 .mainHeader{
     background-color: var(--main-color);
-    padding-inline: 2rem;
 }
 
 .content{
-    width: 100%;
-    max-width: 1440px;
     height: 47px;
     display: flex;
     align-items: center;
@@ -122,7 +119,6 @@
 
 @media (max-width: 700px) {
     .mainHeader{
-        padding-inline: 1rem;
         z-index: 10;
     }
 

@@ -10,4 +10,19 @@
   --font-text: "Inter", sans-serif;
   --text-dark-brown: #5a3a2e;
   --text-light-brown: #856b60;
+
+  /* Layout */
+  --container-max: 90rem;
+  --container-padding: 6rem;
+
+  /* Shapes */
+  --radius-card: 1rem;
+  --radius-pill: 100px;
+  --shadow-card: 0 4px 20px rgba(90, 58, 46, 0.04);
+}
+
+@media (max-width: 700px) {
+  :root {
+    --container-padding: 1.5rem;
+  }
 }

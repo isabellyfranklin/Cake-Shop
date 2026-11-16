@@ -4,6 +4,7 @@ import styles from "./about.module.css"
 export default function About() {
   return (
     <section id="sobre" className={styles.about}>
+      <div className={`container ${styles.inner}`}>
       
       <div className={styles.media}>
         <div className={styles.image}>
@@ -22,7 +23,7 @@ export default function About() {
                 Nossa história
             </button>
        </div>
-
+      </div>
     </section>
   );
 }

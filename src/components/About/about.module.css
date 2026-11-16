@@ -1,8 +1,10 @@
 .about {
   width: 100%;
   background-color: var(--main-color);
-  padding-inline: 4rem;
   padding-block: 6rem;
+}
+
+.inner {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -75,8 +77,10 @@
 
 @media (max-width: 700px) {
   .about {
-    padding-inline: 1rem;
     padding-block: 3rem;
+  }
+
+  .inner {
     gap: 0rem;
   }
 
